@@ -83,7 +83,7 @@ class SCGICatalog():
                                     for ii, elem2 in enumerate(dct[key]):
                                         if k1 == self.hashKey(elem2):
                                             found = ii
-                                    if found > 0:
+                                    if found >= 0:
                                         dct[key][found] = self.mergeResources([dct[key][found], elem])
                                     else:
                                         dct[key].append(elem)
