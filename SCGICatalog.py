@@ -146,7 +146,7 @@ class SCGICatalogGithub(SCGICatalog):
 class SCGICatalogXsede(SCGICatalog):
     def __init__(self, **kwargs):   
         super(SCGICatalogXsede, self).__init__(**kwargs)
-        self.ws_path = kwargs.get("ws", "https://info.xsede.org/wh1/warehouse-views/v1/resources-sgci/v0.1.0")
+        self.ws_path = kwargs.get("ws", "https://info.xsede.org/wh1/warehouse-views/v1/resources-sgci/v1.0.0")
         self.listResources(filter="")
         
     def listResources(self, filter="", **kwargs):
